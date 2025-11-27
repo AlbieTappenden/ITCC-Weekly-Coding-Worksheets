@@ -1,12 +1,18 @@
+let dotsArray = [] 
 
-function setup() {
+function setup()
+{
+  let w = width;
+  let h = height;
   createCanvas(710, 400);
   noFill()
   stroke(255,0,);
   // Create objects
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 50; i++)
+  {
     // create a an object data type to store each dot values
-    let ellipseObj = {
+    let ellipseObj =
+    {
       x: random(w),
       y: random(h),
       diameter: random(10, 50),
@@ -19,25 +25,30 @@ function setup() {
 }
 
 
-function draw() {
+function draw()
+{
   background(0);
   // draw all the dots on each frame, moving there position
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 50; i++)
+  {
     ellipseObj = dotsArray[i];
 
     // Move the ellipse
     ellipseObj.x += ellipseObj.speedX;
-    ellipseObj.x += ellipseObj.speedY;
+    ellipseObj.y += ellipseObj.speedY;
 
     // Check boundaries and bounce back
-    if (ellipseObj.x < 0 || ellipseObj.x > width) {
+    if (ellipseObj.x < 0 || ellipseObj.x > width)
+    {
       ellipseObj.speedX *= -1;
     }
-    if (ellipseObj.y < 0 || ellipseObj.y > height) {
+    if (ellipseObj.y < 0 || ellipseObj.y > height)
+    {
       ellipseObj.speedY *= -1;
     }
 
     // Draw the ellipse
+    stroke("blue");
     ellipse(ellipseObj.x, ellipseObj.y, ellipseObj.diameter);
   }
 }
