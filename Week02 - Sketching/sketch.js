@@ -1,88 +1,102 @@
-/*
-  // TASK 2 - 3
-  function setup() 
-  {
-    createCanvas(1920, 1080);
-    background(255);
-    strokeWeight(4);
-    stroke(0, 102);
-  }
+// TASK 1
+// function setup()
+// {
+//   createCanvas(400, 300);
+//   background(color(200));
+// }
 
-  function draw() 
-  {
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    let weight = dist(mouseX, mouseY, pmouseX, pmouseY);
-    strokeWeight(weight);
-  }
-*/
+// function draw()
+// {
+//   fill(30, 125, 300);
+//   ellipse(200,150, 400,300);
+//   fill(250);
+//   textSize(35);
+//   textAlign(CENTER);
+//   text("hello world", 200, 150);
+// }
 
-/*
-// TASK 4
-let x = 0;
-let y = 0;
-let easing = 0.01;
+// TASK 2
+// function setup()
+// {
+//   createCanvas(400, 300);
+//   background(color(200));
+// }
 
-function setup(){
-  	createCanvas(1920,1080);
-    background("orange");
-}
+// function draw()
+// {
+//   fill(30, 125, 300);
+//   ellipse(200,150, 400,300);
+//   fill(250);
+//   textSize(35);
+//   textAlign(CENTER);
+//   text("hello world", 200, 150);
+  
+//   rect(25,50,25,25);
+//   fill(0, 255, 0)
+//   line(0, 50, 400, 50);
+//   fill(200, 255, 0);
+//   triangle(47, 54, 100, 90, 100, 200);
+//   fill(200, 0, 0);
+//   quad(158,55,199,14,392,66,351,107);
+//   fill(0,150, 150);
+//   arc(200,200,150,50,90,170);
+// }
 
-function draw() {
-	let targetX = mouseX;
-	x += (targetX - x) * easing;
-  	ellipse(x, y, 40, 40, 12);
-   	console.log("X: " + targetX + " : " + x);
+// Task 3
+// let rectWidth = 100;
+// let rectHeight = 40;
 
+// function setup() {
+//   createCanvas(400, 300);
+//   background(color(200));
+// }
 
-  let targetY = mouseY;
-	y += (targetY - y) * easing;
-   	console.log("Y: " + targetY + " : " + y);
+// function draw() {
+//   rect(25,50,rectWidth,rectHeight);
+//   rect(150,70,rectWidth,rectHeight);
+//   rect(250,10,rectWidth,rectHeight);
+//   rect(200,250,rectWidth,rectHeight);
+// }
 
-}
-*/
+// Task 4
+// let rectWidth = 100;
+// let rectHeight = 40;
 
-/*
-// TASK 5
-function setup() {
-	createCanvas(480, 480);
-	strokeWeight(30);
-	background(204);
-}
+// function setup()
+// {
+//   createCanvas(400, 300);
+//   background(color(200));
+// }
 
-function draw() {
-	stroke(102);
-	line(40,0,70,height);
+// function draw()
+// {
+//   rect(25,50,rectWidth,rectHeight+10);
+//   rect(150,70,rectWidth-10,rectHeight);
+//   rect(250,10,rectWidth,rectHeight*2);
+//   rect(200,250,rectWidth/2,rectHeight);
+// }
 
-	if (mouseIsPressed == true)
-  {
-		stroke("Red");
-	}
-  else if (keyIsPressed == true)
-  {
-    stroke("Blue");
-  }
-  else
-  {
-		stroke(255);
-	}
-  	line(0,70,width,50);
-}
-*/
+// Task 5
+// let rectWidth = 100;
+// let rectHeight = 125;
 
-// TASK 6
-let x = 0;
-let easing = 0.05;
+// function setup()
+// {
+//   createCanvas(800,600);
+// 	background(200);
+// 	noLoop();
+// }
 
-function setup()
-{
-  createCanvas(500, 500);
-}
+// function draw()
+// {
+//   noFill();
+// 	drawShape(rectWidth,rectHeight);
+// }
 
-function draw()
-{
-  background("white");
-  strokeWeight(2);
-  let targetX = mouseX;
-  x += (targetX - x) * easing;
-  line(x, 0, x, height);
-}
+// function drawShape(rectangleWidth,rectangleHeight)
+// {
+// 	let xPos = random(0, width);
+// 	let yPos = random(0, height);
+
+// 	rect(xPos,yPos,rectangleWidth,rectangleHeight);
+// }
