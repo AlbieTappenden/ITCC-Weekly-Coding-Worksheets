@@ -1,26 +1,26 @@
-function setup()
+function setup() 
 {
-  createCanvas(800, 800);
-  background(0);
-  noStroke();
+  createCanvas(800, 800); // canvas of 800 x 800 pixels
+  background(0); // black background
+  noStroke(); // no outline on objects
 
-  for (let i = 0; i < 100; i++)
+  for (let i = 0; i < 100; i++) // for loop
     {
-        fill(random(255), random(255), random(255));
+        fill(random(255), random(255), random(255)); // fill objects with random colours
 
-        let x = random(width);
-        let y = random(height);
-        let size = random(20, 80);
+        let x = random(width); // create a variable with a random y value
+        let y = random(height); // create a variable with a random x value
+        let size = random(20, 80); // create a variable with a random size of 20 height and width of 80
 
         if (random() < 0.5)
-        {
+        { 
             // Triangle with rotation
-            push();
-            translate(x, y);
+            push(); // single out functions inside push and pop
+            translate(x, y); // mpve object to x, y
             rotate(random(TWO_PI)); // random rotation of up to 360 degrees.
             triangle(-size/2, size/2, size/2, size/2, 0, -size/2);
             // randomize x and y points, then rotate it randomly, and then draw it at the centered point
-            pop();
+            pop(); // stop singling out functions
         }
         else
         {
@@ -30,9 +30,9 @@ function setup()
     }
 }
 
-function draw()
+function draw() // runs 60 frames a second
 {
-
+    // art is static so [function draw()] is not used
 }
 
 // for this piece, I was inspired by Sonia Delaunay, who was known for 

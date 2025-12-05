@@ -1,7 +1,7 @@
 function setup() 
 {
   createCanvas(800, 800);
-//  noStroke(); - commented out because it gave it a cool outline to each object somehow.
+  //  noStroke(); - commented out because it gave it a cool outline to each object somehow.
 
   let grid = 10; // a 10 x 10 grid
   let size = width / grid; // how big each cell is
