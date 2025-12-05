@@ -27,7 +27,7 @@ function draw()
 			push();
 				for(let i = 0; i < 100; i++)
 				{
-					fill(255,255,255, 200);
+					fill(255,255,255, 200); // fill ellipses with colour white and opacity of 200
 					scale(0.95);
 					rotate(angle);
 					ellipse(width, 0, 120);
@@ -37,7 +37,7 @@ function draw()
 			push();
 				for(let i = 0; i < 100; i++)
 				{
-					fill(0,0,0, 200);
+					fill(0,0,0, 200); // fill ellipses with colour black and opacity of 200
 					scale(0.95);
 					rotate(-angle);
 					ellipse(width, 0, 120);
